@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("./images/weather-img2.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  height: 70vh;
+  background-attachment: fixed;
+}
+
+h1 {
+  opacity: 1;
+  color: #fff;
+}
+
+.getbtn {
+  border: 1px solid;
+  height: 30px;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #000;
+  font-weight: 600;
+  font-family: sans-serif !important;
+  width: 120px;
+  -webkit-box-shadow: 1px 1px 2px #000;
+          box-shadow: 1px 1px 2px #000;
+}
+
+.getbtn:hover {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.cityname {
+  border: unset;
+  width: 200px;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.result {
+  display: block;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.temp,
+.deg {
+  font-size: 30px;
+}
+
+.desc {
+  font-size: 17px;
+}
+
+.full-text {
+  margin-top: 50px;
+  border-style: none;
+  border-radius: 25px;
+  border-color: #196666;
+  border-width: 8px;
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */
