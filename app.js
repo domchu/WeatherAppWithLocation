@@ -1,7 +1,7 @@
 let apiKey = "9b2b17c141011453cde21df077126a89";
 let loader = document.querySelector(".load");
 let resultDiv = document.querySelector(".result");
-let cityName = document.querySelector("cityname");
+let cityName = document.querySelector(".cityname");
 let getWeatherBtn = document.querySelector(".getbtn");
 
 function outPutData(result) {
@@ -28,8 +28,8 @@ if (navigator.geolocation) {
     // console.log(location);
     let lat = location.coords.latitude;
     let long = location.coords.longitude;
-    // console.log(lat);
-    // console.log(long);
+    console.log(lat);
+    console.log(long);
     async function getWeather() {
       loader.style.display = "block";
       let api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}`;
@@ -37,6 +37,7 @@ if (navigator.geolocation) {
       let result = await data;
       result = await result.json();
       loader.style.display = "none";
+      resultDiv.style.display = "block";
       outPutData(result);
       //   console.log(result.main);
     }
