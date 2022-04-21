@@ -31,8 +31,8 @@ if (navigator.geolocation) {
     console.log(lat);
     console.log(long);
     async function getWeather() {
-      loader.style.display = "block";
       let api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}`;
+      loader.style.display = "block";
       let data = fetch(api);
       let result = await data;
       result = await result.json();
@@ -46,8 +46,8 @@ if (navigator.geolocation) {
 }
 
 async function getWeather() {
-  loader.style.display = "block";
   let api = `https://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&appid=${apiKey}`;
+  loader.style.display = "block";
   let data = fetch(api);
   let result = await (await data).json();
   loader.style.display = "none";
